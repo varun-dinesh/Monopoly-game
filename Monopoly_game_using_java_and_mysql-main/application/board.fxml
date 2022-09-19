@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1270.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.board_controller">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="1270.0" opacity="0.67" pickOnBounds="true">
+         <image>
+            <Image url="@bgimg1.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="dp1" alignment="CENTER" layoutX="975.0" layoutY="15.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: black;" text="player 1" textAlignment="CENTER" textFill="#02a2ff">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dp2" alignment="CENTER" layoutX="975.0" layoutY="58.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: black;" text="player 2" textFill="#06ff27">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dp3" alignment="CENTER" layoutX="975.0" layoutY="104.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: black;" text="player 3" textFill="#fb0202">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="dp4" alignment="CENTER" layoutX="975.0" layoutY="146.0" prefHeight="31.0" prefWidth="138.0" style="-fx-background-color: black;" text="player 4" textFill="#fffb02">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="amt1" layoutX="1149.0" layoutY="15.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: black;" text="10000" textFill="#00fbff">
+         <font>
+            <Font name="Century Gothic Bold" size="22.0" />
+         </font></Label>
+      <Label fx:id="amt2" layoutX="1149.0" layoutY="58.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: black;" text="10000" textFill="#00ff37">
+         <font>
+            <Font name="Century Gothic Bold" size="22.0" />
+         </font></Label>
+      <Label fx:id="amt3" layoutX="1149.0" layoutY="104.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: black;" text="10000" textFill="RED">
+         <font>
+            <Font name="Century Gothic Bold" size="22.0" />
+         </font></Label>
+      <Label fx:id="amt4" layoutX="1149.0" layoutY="146.0" prefHeight="31.0" prefWidth="95.0" style="-fx-background-color: black;" text="10000" textFill="#f2ff02">
+         <font>
+            <Font name="Century Gothic Bold" size="22.0" />
+         </font></Label>
+      <ImageView fitHeight="589.0" fitWidth="829.0" layoutX="24.0" layoutY="31.0" pickOnBounds="true">
+         <image>
+            <Image url="@board.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice1" fitHeight="72.0" fitWidth="79.0" layoutX="1056.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dice1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice2" fitHeight="72.0" fitWidth="79.0" layoutX="1149.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/dice2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="roll_dice_btn" layoutX="1072.0" layoutY="576.0" mnemonicParsing="false" onAction="#roll_dice" prefHeight="43.0" prefWidth="138.0" text="ROLL THE DICE!" textFill="#881f83">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buybtn" disable="true" layoutX="1059.0" layoutY="236.0" mnemonicParsing="false" onAction="#buy_land" prefHeight="31.0" prefWidth="138.0" text="BUY">
+         <font>
+            <Font name="Bodoni MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="lid3" layoutX="611.0" layoutY="543.0" prefHeight="74.0" prefWidth="66.0" />
+      <Label fx:id="lid4" layoutX="541.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid5" layoutX="475.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid6" layoutX="406.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid7" layoutX="340.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid8" layoutX="268.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid9" layoutX="202.0" layoutY="546.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid10" layoutX="136.0" layoutY="542.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid11" layoutX="24.0" layoutY="542.0" prefHeight="75.0" prefWidth="109.0" />
+      <Label layoutX="24.0" layoutY="31.0" prefHeight="75.0" prefWidth="109.0" />
+      <Label fx:id="lid12" layoutX="24.0" layoutY="495.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid13" layoutX="24.0" layoutY="447.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid14" layoutX="24.0" layoutY="398.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid15" layoutX="24.0" layoutY="351.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid16" layoutX="24.0" layoutY="302.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid17" layoutX="24.0" layoutY="253.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid18" layoutX="24.0" layoutY="205.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid19" layoutX="24.0" layoutY="157.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid20" layoutX="24.0" layoutY="111.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid21" layoutX="24.0" layoutY="31.0" prefHeight="75.0" prefWidth="109.0" />
+      <Label fx:id="lid22" layoutX="136.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid23" layoutX="202.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid24" layoutX="268.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid25" layoutX="340.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid26" layoutX="406.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid27" layoutX="472.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid28" layoutX="541.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid29" layoutX="611.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid30" layoutX="677.0" layoutY="31.0" prefHeight="75.0" prefWidth="66.0" />
+      <Label fx:id="lid31" layoutX="746.0" layoutY="31.0" prefHeight="75.0" prefWidth="109.0" />
+      <Label fx:id="lid32" layoutX="746.0" layoutY="111.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid33" layoutX="746.0" layoutY="157.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid34" layoutX="746.0" layoutY="205.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid35" layoutX="746.0" layoutY="253.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid36" layoutX="746.0" layoutY="302.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid37" layoutX="746.0" layoutY="351.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid38" layoutX="746.0" layoutY="398.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid39" layoutX="746.0" layoutY="447.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid40" layoutX="746.0" layoutY="495.0" prefHeight="47.0" prefWidth="109.0" />
+      <Label fx:id="lid1" layoutX="746.0" layoutY="542.0" prefHeight="75.0" prefWidth="109.0" />
+      <Label fx:id="pr3" layoutX="772.0" layoutY="546.0" prefHeight="9.0" prefWidth="13.0" style="-fx-background-color: red;" />
+      <Label fx:id="pr2" layoutX="759.0" layoutY="546.0" prefHeight="9.0" prefWidth="13.0" style="-fx-background-color: #06ff27;" />
+      <Label fx:id="pr4" layoutX="785.0" layoutY="546.0" prefHeight="9.0" prefWidth="13.0" style="-fx-background-color: yellow;" />
+      <Label fx:id="pr1" layoutX="746.0" layoutY="546.0" prefHeight="9.0" prefWidth="13.0" style="-fx-background-color: blue;" />
+      <Label fx:id="cid2" layoutX="677.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid4" layoutX="541.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid7" layoutX="340.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid9" layoutX="202.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid10" layoutX="136.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid12" layoutX="7.0" layoutY="497.0" prefHeight="43.0" prefWidth="13.0" />
+      <Label fx:id="cid14" layoutX="7.0" layoutY="398.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid15" layoutX="7.0" layoutY="355.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid17" layoutX="7.0" layoutY="253.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid19" layoutX="7.0" layoutY="162.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid20" layoutX="7.0" layoutY="113.0" prefHeight="43.0" prefWidth="13.0" />
+      <Label fx:id="cid22" layoutX="133.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid24" layoutX="268.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid25" layoutX="340.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid27" layoutX="472.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid28" layoutX="541.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid30" layoutX="677.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid32" layoutX="855.0" layoutY="111.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid33" layoutX="854.0" layoutY="155.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid35" layoutX="853.0" layoutY="253.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid38" layoutX="854.0" layoutY="398.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid40" layoutX="853.0" layoutY="495.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="lid2" layoutX="677.0" layoutY="546.0" prefHeight="74.0" prefWidth="66.0" />
+      <Label fx:id="to_roll" layoutX="1048.0" layoutY="366.0" prefHeight="56.0" prefWidth="186.0" style="-fx-background-color: black;" text="player1 turn" textFill="#d82ef0">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="landed_on" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="237.0" prefHeight="196.0" prefWidth="562.0" text="you are at start&#10;">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cid6" layoutX="406.0" layoutY="619.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid13" layoutX="7.0" layoutY="447.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid16" layoutX="7.0" layoutY="302.0" prefHeight="47.0" prefWidth="13.0" />
+      <Label fx:id="cid26" layoutX="406.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid29" layoutX="611.0" layoutY="15.0" prefHeight="17.0" prefWidth="66.0" />
+      <Label fx:id="cid36" layoutX="854.0" layoutY="302.0" prefHeight="47.0" prefWidth="13.0" />
+   </children>
+</AnchorPane>
